@@ -43,16 +43,16 @@ L'application est conçue pour fonctionner de manière autonome sans installatio
    cd NOM_DU_DEPOT
 ```
 3. Installez les dépendances du projet :
-```bash
+   ```bash
    npm install
    ```
 
 4. Initialisez la base de données SQLite :
-```Bash
+   ```Bash
    npm run init-db
    ```
 5. Démarrez le serveur local :
-```bash
+   ```bash
    npm run start
    ```
 
