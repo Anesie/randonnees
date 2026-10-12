@@ -39,9 +39,9 @@ L'application est conçue pour fonctionner de manière autonome sans installatio
    ```
 
 2. Allez dans le dossier du projet :
-```bash
+   ```bash
    cd NOM_DU_DEPOT
-```
+   ```
 3. Installez les dépendances du projet :
    ```bash
    npm install
