@@ -36,4 +36,18 @@ L'application est conçue pour fonctionner de manière autonome sans installatio
 1. Clonez le dépôt sur votre machine locale :
    ```bash
    git clone https://github.com/Anesie/randonnees
+
+2. Installez les dépendances du projet :
+```bash
+   npm install
+
+3. Initialisez la base de données SQLite :
+```bash
+   npm run init-db
+
+4. Démarrez le serveur local :
+```bash
+   npm run start
+
+
   
