@@ -15,8 +15,8 @@ Le projet intègre l'ensemble du "produit minimum viable" ainsi que toutes les f
 *   **Contribution :** Formulaire de création de randonnée (nom, description, adresse, ajout de photo) redirigeant automatiquement vers la nouvelle fiche créée.
 
 ### 🔐 Authentification & Sécurité
-*   **Gestion des utilisateurs :** Formulaire unifié de connexion et d'inscription (avec case à cocher pour les nouveaux utilisateurs)[cite: 4].
-*   **Sécurité des données :** Hachage cryptographique systématique des mots de passe avant l'enregistrement en base de données[cite: 4].
+*   **Gestion des utilisateurs :** Formulaire unifié de connexion et d'inscription (avec case à cocher pour les nouveaux utilisateurs).
+*   **Sécurité des données :** Hachage cryptographique systématique des mots de passe avant l'enregistrement en base de données.
 *   **Contrôle d'accès :** Redirection automatique vers la page de connexion si un utilisateur non-authentifié tente d'accéder à la page "Contribuer" (protection des routes).
 *   **Gestion des erreurs côté client :** Affichage de messages d'erreur asynchrones (mot de passe incorrect, identifiant inexistant/déjà pris) sans recharger la page.
 
