@@ -1,60 +1,65 @@
-# ⛰️ Plateforme de Gestion de Randonnées
+# ⛰️ Hiking Management Platform
 
-## 📖 Présentation
-Ce projet est une application web full-stack permettant aux utilisateurs d'enregistrer, d'explorer et de noter des parcours de randonnées. Il a été développé dans le cadre de la Licence MIASHS (Informatique et Cognition) à l'Université Grenoble Alpes (UGA).
+## 📖 Presentation
+This project is a full-stack web application that allows users to record, explore, and rate hiking trails. It was developed as part of the MIASHS Bachelor's degree (Computer Science and Cognition) at Université Grenoble Alpes (UGA).
 
-L'application repose sur une architecture client-serveur développée en **Node.js** avec une base de données intégrée **SQLite**. Elle intègre un système d'authentification sécurisé et de multiples interactions asynchrones (AJAX) pour offrir une expérience utilisateur fluide sans rechargement de page.
+The application relies on a client-server architecture developed in **Node.js** with an integrated **SQLite** database. It features a secure authentication system and multiple asynchronous interactions (AJAX) to provide a smooth user experience without page reloads.
 
-## ✨ Fonctionnalités
-Le projet intègre l'ensemble du "produit minimum viable" ainsi que toutes les fonctionnalités avancées requises :
+## ✨ Features
+The project integrates all requirements of the Minimum Viable Product (MVP) as well as advanced features:
 
-### 🗺️ Gestion des Randonnées
-*   **Exploration :** Page d'accueil listant toutes les randonnées avec leur nom, point de départ et photo d'illustration.
-*   **Tri dynamique :** Possibilité de trier les randonnées par ordre alphabétique ou par score de popularité, le tout dynamiquement sans rechargement de page (AJAX).
-*   **Détails :** Pages dédiées pour chaque randonnée affichant la description complète, l'adresse de départ et la note moyenne.
-*   **Contribution :** Formulaire de création de randonnée (nom, description, adresse, ajout de photo) redirigeant automatiquement vers la nouvelle fiche créée.
+### 🗺️ Hiking Management
+- **Exploration:** Home page listing all hiking trails with their names, starting addresses, and illustration photos.
+- **Dynamic Sorting:** Ability to sort hiking trails alphabetically or by popularity score dynamically without reloading the page (AJAX).
+- **Details:** Dedicated pages for each hike displaying the full description, starting address, and average rating[cite: 3, 4].
+- **Contribution:** Trail creation form (name, description, address, photo upload) that automatically redirects to the newly created trail page.
 
-### 🔐 Authentification & Sécurité
-*   **Gestion des utilisateurs :** Formulaire unifié de connexion et d'inscription (avec case à cocher pour les nouveaux utilisateurs).
-*   **Sécurité des données :** Hachage cryptographique systématique des mots de passe avant l'enregistrement en base de données.
-*   **Contrôle d'accès :** Redirection automatique vers la page de connexion si un utilisateur non-authentifié tente d'accéder à la page "Contribuer" (protection des routes).
-*   **Gestion des erreurs côté client :** Affichage de messages d'erreur asynchrones (mot de passe incorrect, identifiant inexistant/déjà pris) sans recharger la page.
+### 🔐 Authentication & Security
+- **User Management:** Unified login and registration form (with a checkbox for new users).
+- **Data Security:** Systematic cryptographic password hashing before saving to the database).
+- **Access Control:** Automatic redirection to the login page if an unauthenticated user attempts to access the "Contribute" page (route protection).
+- **Client-Side Error Handling:** Asynchronous error messaging (incorrect password, non-existent or already taken username) without reloading the page.
 
-### ⭐ Système de Notation
-*   **Évaluation :** Les utilisateurs connectés peuvent attribuer une note de 1 à 5 à chaque randonnée.
-*   **Unicité :** Une seule note autorisée par utilisateur et par randonnée.
-*   **Expérience fluide :** Soumission des notes en AJAX avec gestion des erreurs réseau côté client (ex: perte de connexion serveur).
+### ⭐ Rating System
+- **Evaluation:** Logged-in users can rate each hike from 1 to 5 stars.
+- **Uniqueness:** Only one rating allowed per user per hike.
+- **Smooth Experience:** Asynchronous rating submission with client-side network error handling (e.g., lost server connection).
 
-## 🛠️ Technologies Utilisées
-*   **Backend :** Node.js (version LTS)
-*   **Base de données :** SQLite (Base de données relationnelle intégrée)
-*   **Frontend :** HTML5, CSS3, JavaScript (Vanilla, Fetch API pour l'AJAX)
+## 🛠️ Technologies Used
+- **Backend:** Node.js (LTS version)
+- **Database:** SQLite (Embedded relational database)
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla, Fetch API for AJAX)
 
-## 🚀 Installation et Lancement
-L'application est conçue pour fonctionner de manière autonome sans installation de logiciel tiers (hormis Node.js).
+## 🚀 Installation and Setup
+The application is designed to run independently without installing third-party software (other than Node.js).
 
-1. Clonez le dépôt sur votre machine locale :
+1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Anesie/randonnees
-   ```
+   git clone [https://github.com/Anesie/randonnees](https://github.com/Anesie/randonnees) ```
 
-2. Allez dans le dossier du projet :
-   ```bash
-   cd NOM_DU_DEPOT
-   ```
-3. Installez les dépendances du projet :
-   ```bash
-   npm install
-   ```
-
-4. Initialisez la base de données SQLite :
-   ```Bash
+2. Navigate into the project folder:
+    ```bash
+   cd randonnees
+    ```
+3. Install project dependencies:
+    ```bash
+    npm install
+    ```
+4. Initialize the SQLite database:
+    ```bash
    npm run init-db
-   ```
-5. Démarrez le serveur local :
-   ```bash
+    ```
+5. Start the local server:
+    ```bash
    npm run start
-   ```
+    ```
+6. Open your browser and access the application on port 8080:
+    ```bash
+    http://localhost:8080
+     ```
 
+### 📋 Code Quality
+The project was developed in compliance with web standards (validated via the W3C Validator). Special attention was paid to code indentation, clarity, simplicity, and overall interface ergonomics.   
 
-  
+### 👥 Author
+Anesie Martiniani - Development (L3 MIASHS)
